@@ -14,11 +14,21 @@ server.use('/img', express.static(__dirname + '/public/img'));
 
 server.get('/', (req, res) => {
 
-  res.sendFile(__dirname + '/views/index.html');
+   res.sendFile(__dirname + '/views/index.html');
   
+ });  
+
+server.get('/waterconditions', (req, res) => {
+  res.sendFile(__dirname + '/views/waterconditions.html');
 });
 
+server.get('/fishinmyarea', (req, res) => {
+  res.sendFile(__dirname + '/views/fishinmyaea.html');
+});
 
+server.get('/castingtips', (req, res) => {
+  res.sendFile(__dirname + '/views/castingtips.html');
+});
 
 server.listen(3000, () => {
     console.log(`Server running at http://localhost:${port}`);
