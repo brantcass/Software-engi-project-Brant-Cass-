@@ -23,7 +23,7 @@ server.get('/waterconditions', (req, res) => {
 });
 
 server.get('/fishinmyarea', (req, res) => {
-  res.sendFile(__dirname + '/views/fishinmyaea.html');
+  res.sendFile(__dirname + '/views/fishinmyarea.html');
 });
 
 server.get('/castingtips', (req, res) => {
