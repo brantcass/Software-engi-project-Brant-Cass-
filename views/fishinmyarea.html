@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scaled= 1.0" />
+    <title>Fly Fishing Guide</title>
+    <link rel="stylesheet" href="/css/Casting.css" />
+  </head>
+
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        
+        <ul>
+          <li><a href="/"> Home</a></li>
+          <li><a href="waterconditions"> Water conditions</a></li>
+          <li><a href="castingtips"> Casting Tips</a></li>
+          <li><a href="fishinmyarea"> Fish In My Area</a></li>
+
+        </ul>
+      </div>
+
+      <div class="content">
+
+        <h1>Please select type of fish you are trying to catch</h1>
+
+      </div>
+
+      <div>
+
+        <form action="/fishfound" method = "get">
+            <label for="fish-type">Fish Type: </label>
+            <select name="fish-type" id="fish-type">
+                <option value="largemouth-bass">Large Mouth Bass</option>
+                <option value="smallmouth-bass">Small Mouth Bass</option>
+                <option value="Blue Gill">Blue Gill</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+      </div>
+
+    </div>
+  </body>
+</html>
