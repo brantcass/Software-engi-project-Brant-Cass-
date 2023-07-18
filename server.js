@@ -30,6 +30,10 @@ server.get('/castingtips', (req, res) => {
   res.sendFile(__dirname + '/views/castingtips.html');
 });
 
+server.get('/fishfound', (req, res) => {
+  res.sendFile(__dirname + '/views/fishfound.html');
+});
+
 server.listen(3000, () => {
     console.log(`Server running at http://localhost:${port}`);
   });
