@@ -127,3 +127,40 @@
   top: 20%;
   color: whitesmoke;
 }
+
+form{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(104, 205, 104); 
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 130px;
+    color:whitesmoke;
+}
+
+select {
+    width: 210px;
+    color:whitesmoke;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(20, 169, 169); /* Set the button background color */
+    color: whitesmoke; /* Set the button text color to white */
+    border-radius: 4px;
+    cursor: pointer;
+    width:20%
+}
+
+label{
+
+    margin:15px;
+    padding:8px
+
+}
+
