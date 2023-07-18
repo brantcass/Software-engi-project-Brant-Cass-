@@ -89,3 +89,30 @@
     
     
 }
+
+.contentfishfound h1{
+    
+    
+    margin: 20px auto;
+    font-weight: bold;
+    line-height: 25px;
+    font-size: larger;
+}
+
+.contentfishfound p{
+
+    font-size: 20px;
+    margin-bottom:10px;
+}
+
+.contentfishfound{
+    
+    width: 100%;
+    position: absolute;
+    top:20%;
+    transform: translate(0%,0%);
+    text-align: center;
+    
+    color: whitesmoke;
+}
+
