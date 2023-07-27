@@ -9,7 +9,7 @@ const port = 3000;
 //Static files
 
 server.use(express.static("public"));
-server.use(bodyParser.urlencoded({extended: true}));
+server.use(bodyParser.urlencoded({ extended: true }));
 
 server.use("/css", express.static(__dirname + "/public/css"));
 server.use("/js", express.static(__dirname + "/public/js"));
@@ -35,24 +35,41 @@ server.get("/fishfound", (req, res) => {
   res.sendFile(__dirname + "/views/fishfound.html");
 });
 
-server.post("/submit", (req, res) => {
+server.get("/clearwater", (req, res) => {
+  res.sendFile(__dirname + "/views/clearwater.html");
+});
+
+server.get("/murkywater", (req, res) => {
+  res.sendFile(__dirname + "/views/murkywater.html");
+});
+
+server.get("/greenwater", (req, res) => {
+  res.sendFile(__dirname + "/views/greenwater.html");
+});
+
+server.get("/brownwater", (req, res) => {
+  res.sendFile(__dirname + "/views/brownwater.html");
+});
+
+
+server.post("/Submit", (req, res) => {
   const waterColor = req.body["water-color"];
 
   switch (waterColor) {
     case "clear":
-      res.redirect("/clearwater.html");
+      res.redirect("/clearwater");
       break;
 
     case "murky":
-      res.redirect("/murkywater.html");
+      res.redirect("/murkywater");
       break;
 
     case "green":
-      res.redirect("/greenwater.html");
+      res.redirect("/greenwater");
       break;
 
     case "brown":
-      res.redirect("/brownwater.html");
+      res.redirect("/brownwater");
       break;
 
     default:
