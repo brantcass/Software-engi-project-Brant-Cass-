@@ -15,14 +15,14 @@
 
 .images {
   width: 35%;
-  height: 250px; /* Adjust the height to your desired square size */
+  height: 300px; /* Adjust the height to your desired square size */
   background-image: url("/img/flycast.jpeg");
   background-size: cover;
   flex-direction: left;
   background-position: center;
   position: absolute;
   bottom:257px;
-  left: 50px;
+  left: 80px;
   background-position: center 30%;
   justify-content: center;
   align-items: center;
@@ -31,23 +31,25 @@
 .images2{
 
   width: 35%;
-  height: 280px; /* Adjust the height to your desired square size */
+  height: 400px; /* Adjust the height to your desired square size */
   background-image: url("/img/flycastaim.png");
   background-size: cover;
   flex-direction: left;
   background-position: center;
   position: absolute;
-  bottom:230px;
-  left: 390px;
+  bottom:150px;
+  left: 650px;
   background-position: center 30%;
   justify-content: center;
-  align-items: center;
+  align-items:center;
 }
 .images2 h2{
     color:whitesmoke;
     font-size: 20px;
     text-align: center;
-    margin:20px;
+    margin:18px;
+    bottom:100px;
+    
 }
 
 .images h2{
@@ -61,6 +63,7 @@
 .text{
 
     color:whitesmoke;
+    padding:5px;
 }
 
 .text h3{
