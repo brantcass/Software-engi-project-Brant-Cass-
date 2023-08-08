@@ -70,18 +70,17 @@
 .content{
 
     width: 100%;
-    position: absolute;
-    top:50%;
+    position:absolute;
+    top:35%;
     transform: translate(0%,0%);
     text-align: center;
-    top: 48%;
     color: whitesmoke;
     
 
 }
 
 .content h1{
-
+    
     margin: 20px auto;
     font-weight: bold;
     line-height: 25px;
@@ -93,26 +92,40 @@
 .contentfishfound h1{
     
     
-    margin: 20px auto;
+    margin: 10px auto;
     font-weight: bold;
     line-height: 25px;
-    font-size: larger;
+    font-size: 30px;
+    line-height: 1.5;
 }
 
 .contentfishfound p{
 
     font-size: 20px;
-    margin-bottom:10px;
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 
 .contentfishfound{
     
     width: 100%;
-    position: absolute;
     top:20%;
     transform: translate(0%,0%);
     text-align: center;
-    
     color: whitesmoke;
+    
 }
 
+.Waterinfo{
+
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    padding:30px;
+}
