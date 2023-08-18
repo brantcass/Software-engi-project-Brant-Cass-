@@ -1,7 +1,7 @@
 const bodyParser = require("body-parser");
 const express = require("express");
 const server = express();
-
+const axios = require('axios');
 
 
 const port = 3000;
@@ -33,6 +33,7 @@ server.get("/castingtips", (req, res) => {
 
 server.get("/fishfound", (req, res) => {
   res.sendFile(__dirname + "/views/fishfound.html");
+  getData();
 });
 
 server.get("/clearwater", (req, res) => {
@@ -51,6 +52,18 @@ server.get("/brownwater", (req, res) => {
   res.sendFile(__dirname + "/views/brownwater.html");
 });
 
+async function getData()  {
+  const url = 'http://localhost:3001/';
+  try {
+  
+    const response = await axios.get(url);
+    console.log('Response:', response.data);
+    }catch(error) {
+      console.error('Error:', error.message);
+    }
+  }
+  
+  
 
 server.post("/Submit", (req, res) => {
   const waterColor = req.body["water-color"];
