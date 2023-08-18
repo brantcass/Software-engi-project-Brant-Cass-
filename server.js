@@ -33,7 +33,7 @@ server.get("/castingtips", (req, res) => {
 
 server.get("/fishfound", (req, res) => {
   res.sendFile(__dirname + "/views/fishfound.html");
-  getData();
+  
 });
 
 server.get("/clearwater", (req, res) => {
@@ -50,6 +50,16 @@ server.get("/greenwater", (req, res) => {
 
 server.get("/brownwater", (req, res) => {
   res.sendFile(__dirname + "/views/brownwater.html");
+});
+
+server.get('/fetch-data', async (req, res) => {
+  try {
+    const response = await axios.get('http://localhost:3001');
+    const data = response.data;
+    res.send(data);
+  } catch (error) {
+    res.status(500).send('Error fetching data.');
+  }
 });
 
 async function getData()  {
