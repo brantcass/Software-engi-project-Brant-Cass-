@@ -41,10 +41,31 @@
             smaller since blue gill are small fish. They love nymphs, foam bugs and ant patterns. These fish love smaller
             little bugs the best since they have such small mouths.
         </p>
-        
+        <br>
+        <div id="serverContent" class ="serverContent" >
 
+          <button id="lengthReq">Length Requirements for fish</button>
+
+          <script>
+            const fetchButton = document.getElementById('lengthReq');
+            const serverContent = document.getElementById('serverContent');
+        
+            fetchButton.addEventListener('click', async () => {
+              try {
+                const response = await fetch('/fetch-data'); // This URL corresponds to the server route for fetching data
+                const data = await response.text();
+                serverContent.innerHTML = data;
+              } catch (error) {
+                serverContent.innerHTML = 'Error fetching data.';
+              }
+            });
+          </script>
+          
+        </div>
+        
       </div>
 
     </div>
+
   </body>
 </html>
