@@ -26,19 +26,21 @@
   background-position: center 30%;
   justify-content: center;
   align-items: center;
+  top:200px;
 }
 
 .images2{
 
   width: 35%;
-  height: 400px; /* Adjust the height to your desired square size */
+  height: 400px;
   background-image: url("/img/flycastaim.png");
   background-size: cover;
   flex-direction: left;
   background-position: center;
   position: absolute;
   bottom:150px;
-  left: 650px;
+  top:200px;
+  left: 750px;
   background-position: center 30%;
   justify-content: center;
   align-items:center;
